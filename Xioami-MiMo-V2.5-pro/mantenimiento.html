@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quién mantiene el sitio - Instituto Lingüístico UNLP. Información sobre el equipo responsable del sitio web.">
+    <title>Quién mantiene el sitio - Instituto Lingüístico UNLP</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <!-- Enlace de salto para accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Encabezado institucional -->
+    <header class="encabezado">
+        <div class="contenedor-header">
+            <div class="logo-titulo">
+                <span class="logo-icono" aria-hidden="true">🎓</span>
+                <div>
+                    <h1>Instituto Lingüístico UNLP</h1>
+                    <p class="eslogan">Formando ciudadanos del mundo desde 1998</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="navegacion" aria-label="Navegación principal">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+        <label for="menu-toggle" class="menu-hamburguesa" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Inicio / Catálogo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="mantenimiento.html" class="activo" aria-current="page">Quién mantiene el sitio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal" id="contenido-principal">
+        <section class="seccion-mantenimiento" aria-labelledby="titulo-mantenimiento">
+            <h2 id="titulo-mantenimiento">Quién mantiene el sitio</h2>
+            <p class="intro-mantenimiento">
+                Este sitio web es desarrollado y mantenido por el equipo de Comunicación Digital
+                del Instituto Lingüístico UNLP. A continuación presentamos a los responsables
+                de cada área involucrada en la gestión del portal.
+            </p>
+
+            <!-- Director del instituto -->
+            <article class="tarjeta-persona" aria-labelledby="director-titulo">
+                <div class="persona-header">
+                    <div class="persona-avatar" aria-hidden="true">👤</div>
+                    <div>
+                        <h3 id="director-titulo">Dirección del Instituto</h3>
+                        <p class="persona-nombre">Dr. Alejandro Fernández</p>
+                        <p class="persona-cargo">Director del Instituto Lingüístico UNLP</p>
+                    </div>
+                </div>
+                <div class="persona-body">
+                    <p>
+                        El Dr. Alejandro Fernández es profesor titular de Lingüística Aplicada en la
+                        Facultad de Humanidades de la UNLP. Desde 2018 dirige el Instituto Lingüístico,
+                        impulsando la modernización de los programas de estudio y la incorporación de
+                        herramientas digitales para la enseñanza de idiomas. Es responsable de la
+                        supervisión general del contenido publicado en este sitio.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo de desarrollo web -->
+            <article class="tarjeta-persona" aria-labelledby="web-titulo">
+                <div class="persona-header">
+                    <div class="persona-avatar" aria-hidden="true">💻</div>
+                    <div>
+                        <h3 id="web-titulo">Desarrollo Web</h3>
+                        <p class="persona-nombre">Lic. Camila Rodríguez</p>
+                        <p class="persona-cargo">Desarrolladora web — Equipo de Comunicación Digital</p>
+                    </div>
+                </div>
+                <div class="persona-body">
+                    <p>
+                        La Lic. Camila Rodríguez egresó de la carrera de Ciencias de la Computación
+                        de la UNLP. Se encarga del diseño, desarrollo y mantenimiento técnico del sitio web,
+                        incluyendo la estructura HTML, las hojas de estilo CSS, la accesibilidad y la
+                        compatibilidad con distintos dispositivos y navegadores. Coordina también la
+                        publicación de materiales descargables como los programas de curso en PDF.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Contenido y comunicación -->
+            <article class="tarjeta-persona" aria-labelledby="contenido-titulo">
+                <div class="persona-header">
+                    <div class="persona-avatar" aria-hidden="true">✍️</div>
+                    <div>
+                        <h3 id="contenido-titulo">Contenido y Comunicación</h3>
+                        <p class="persona-nombre">Prof. Martín López</p>
+                        <p class="persona-cargo">Responsable de contenidos — Departamento de Prensa y Difusión</p>
+                    </div>
+                </div>
+                <div class="persona-body">
+                    <p>
+                        El Prof. Martín López es licenciado en Comunicación Social y trabaja en el
+                        Departamento de Prensa y Difusión de la UNLP. Se encarga de la redacción de
+                        los textos institucionales, la descripción de los cursos, la actualización del
+                        catálogo y la revisión periódica de la información publicada para garantizar
+                        su precisión y claridad.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Soporte técnico -->
+            <article class="tarjeta-persona" aria-labelledby="soporte-titulo">
+                <div class="persona-header">
+                    <div class="persona-avatar" aria-hidden="true">🛠️</div>
+                    <div>
+                        <h3 id="soporte-titulo">Soporte Técnico</h3>
+                        <p class="persona-nombre">Téc. Lucas Gómez</p>
+                        <p class="persona-cargo">Soporte técnico — Área de Sistemas</p>
+                    </div>
+                </div>
+                <div class="persona-body">
+                    <p>
+                        El Téc. Lucas Gómez es responsable del alojamiento del sitio, la configuración
+                        del servidor, los certificados de seguridad y la resolución de incidencias técnicas.
+                        Garantiza la disponibilidad y el correcto funcionamiento del portal las 24 horas
+                        del día.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Información institucional -->
+            <section class="info-institucional" aria-labelledby="titulo-institucional">
+                <h3 id="titulo-institucional">Sobre el Instituto Lingüístico UNLP</h3>
+                <p>
+                    El Instituto Lingüístico UNLP es un organismo dependiente de la Facultad de Humanidades
+                    y Ciencias de la Educación de la Universidad Nacional de La Plata. Fue fundado en 1998
+                    con el objetivo de ofrecer formación en idiomas extranjeros a estudiantes universitarios
+                    y a la comunidad en general. Actualmente dicta cursos de inglés, francés, portugués,
+                    italiano y alemán, con una matrícula anual de más de 2.000 estudiantes.
+                </p>
+                <p>
+                    Este sitio web fue desarrollado como proyecto académico y cumple con los estándares
+                    de accesibilidad WCAG 2.1 nivel AA. No utiliza JavaScript ni frameworks externos.
+                    Todo el diseño se implementa exclusivamente con HTML5 y CSS3.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <p>&copy; 2026 Instituto Lingüístico UNLP. Todos los derechos reservados.</p>
+            <p class="aviso-legal">Sitio desarrollado con fines académicos. Los datos e información publicados son ficticios.</p>
+            <nav aria-label="Enlaces del pie de página">
+                <ul class="menu-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

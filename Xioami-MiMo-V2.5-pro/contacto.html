@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - Instituto Lingüístico UNLP. Formulario de consulta y datos de contacto.">
+    <title>Contacto - Instituto Lingüístico UNLP</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <!-- Enlace de salto para accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Encabezado institucional -->
+    <header class="encabezado">
+        <div class="contenedor-header">
+            <div class="logo-titulo">
+                <span class="logo-icono" aria-hidden="true">🎓</span>
+                <div>
+                    <h1>Instituto Lingüístico UNLP</h1>
+                    <p class="eslogan">Formando ciudadanos del mundo desde 1998</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="navegacion" aria-label="Navegación principal">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+        <label for="menu-toggle" class="menu-hamburguesa" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Inicio / Catálogo</a></li>
+            <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
+            <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal" id="contenido-principal">
+        <section class="seccion-contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            <p class="intro-contacto">
+                ¿Tenés consultas sobre nuestros cursos, inscripciones o disponibilidad? Completá el
+                formulario siguiente y nos pondremos en contacto a la brevedad. También podés
+                comunicarte directamente por teléfono o correo electrónico.
+            </p>
+
+            <div class="contacto-layout">
+                <!-- Formulario de contacto -->
+                <div class="contenedor-formulario">
+                    <h3>Formulario de consulta</h3>
+                    <p class="aviso-demo">
+                        <strong>Nota:</strong> Este es un formulario de demostración con fines académicos.
+                        No envía datos a ningún servidor. En un sitio real, los datos se procesarían mediante
+                        un servicio backend.
+                    </p>
+
+                    <form class="formulario-contacto" action="#" method="post" aria-describedby="aviso-demo">
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre completo <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <input type="text" id="nombre" name="nombre" required
+                                   placeholder="Ej: María García" autocomplete="name"
+                                   aria-required="true">
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="email">Correo electrónico <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required
+                                   placeholder="Ej: maria@ejemplo.com" autocomplete="email"
+                                   aria-required="true">
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="motivo">Motivo de consulta <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <select id="motivo" name="motivo" required aria-required="true">
+                                <option value="" disabled selected>Seleccioná un motivo</option>
+                                <option value="inscripcion">Información sobre inscripciones</option>
+                                <option value="cursos">Consulta sobre cursos disponibles</option>
+                                <option value="precios">Valores y formas de pago</option>
+                                <option value="becas">Becas y descuentos</option>
+                                <option value="horarios">Horarios y modalidades</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="mensaje">Mensaje <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required
+                                      placeholder="Escribí tu consulta aquí..."
+                                      aria-required="true"></textarea>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <button type="submit" class="boton-enviar">Enviar consulta</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Información de contacto directo -->
+                <aside class="info-contacto-directo" aria-labelledby="titulo-datos-contacto">
+                    <h3 id="titulo-datos-contacto">Datos de contacto directo</h3>
+                    <address>
+                        <ul class="lista-contacto">
+                            <li>
+                                <strong>📍 Dirección:</strong>
+                                <span>Calle 7 N.º 777, entre 47 y 48,<br>La Plata, Buenos Aires, Argentina</span>
+                            </li>
+                            <li>
+                                <strong>📞 Teléfono:</strong>
+                                <span>(+54 221) 456-7890</span>
+                            </li>
+                            <li>
+                                <strong>📧 Correo electrónico:</strong>
+                                <span>consultas@ilinguistico.unlp.edu.ar</span>
+                            </li>
+                            <li>
+                                <strong>🕐 Horario de atención:</strong>
+                                <span>Lunes a viernes de 8:00 a 20:00<br>Sábados de 8:00 a 13:00</span>
+                            </li>
+                        </ul>
+                    </address>
+
+                    <h3>¿Dónde estamos?</h3>
+                    <p>
+                        Nuestras instalaciones se encuentran en el centro de La Plata, a pocas cuadras
+                        de la Plaza Moreno y la Estación de Tren La Plata. Contamos con aulas equipadas,
+                        sala de estudio y biblioteca especializada en enseñanza de idiomas.
+                    </p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <p>&copy; 2026 Instituto Lingüístico UNLP. Todos los derechos reservados.</p>
+            <p class="aviso-legal">Sitio desarrollado con fines académicos. Los datos e información publicados son ficticios.</p>
+            <nav aria-label="Enlaces del pie de página">
+                <ul class="menu-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

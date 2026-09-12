@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instituto Lingüístico UNLP - Catálogo de cursos de idiomas. Cursos de inglés y francés para todos los niveles.">
+    <title>Instituto Lingüístico UNLP - Catálogo de Cursos</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <!-- Enlace de salto para accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Encabezado institucional -->
+    <header class="encabezado">
+        <div class="contenedor-header">
+            <div class="logo-titulo">
+                <span class="logo-icono" aria-hidden="true">🎓</span>
+                <div>
+                    <h1>Instituto Lingüístico UNLP</h1>
+                    <p class="eslogan">Formando ciudadanos del mundo desde 1998</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="navegacion" aria-label="Navegación principal">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+        <label for="menu-toggle" class="menu-hamburguesa" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html" class="activo" aria-current="page">Inicio / Catálogo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal" id="contenido-principal">
+        <!-- Sección de bienvenida -->
+        <section class="bienvenida" aria-labelledby="titulo-bienvenida">
+            <h2 id="titulo-bienvenida">Bienvenidos a nuestro catálogo de cursos</h2>
+            <p>
+                En el Instituto Lingüístico UNLP ofrecemos una amplia variedad de cursos de idiomas
+                diseñados para adaptarse a todos los niveles de aprendizaje. Explorá nuestro catálogo,
+                elegí el curso que mejor se adapte a tus necesidades y descargá el programa completo en formato PDF.
+            </p>
+        </section>
+
+        <!-- Selector de categoría (radio buttons + CSS) -->
+        <section class="catalogo" aria-labelledby="titulo-catalogo">
+            <h2 id="titulo-catalogo">Catálogo de Cursos</h2>
+
+            <!-- Radio inputs como hijos directos de section (necesario para CSS ~) -->
+            <input type="radio" name="categoria" id="cat-todos" class="radio-categoria" checked>
+            <input type="radio" name="categoria" id="cat-ingles" class="radio-categoria">
+            <input type="radio" name="categoria" id="cat-frances" class="radio-categoria">
+
+            <div class="selector-categoria" role="radiogroup" aria-label="Seleccionar idioma">
+                <label for="cat-todos" class="etiqueta-categoria">Todos los cursos</label>
+                <label for="cat-ingles" class="etiqueta-categoria">Inglés</label>
+                <label for="cat-frances" class="etiqueta-categoria">Francés</label>
+            </div>
+
+            <!-- Contenedor de tarjetas de cursos -->
+            <div class="grilla-cursos">
+                <!-- Cursos de Inglés -->
+                <article class="tarjeta-curso tarjeta-ingles" aria-labelledby="ingles-inicial-titulo">
+                    <div class="encabezado-tarjeta encabezado-ingles">
+                        <span class="badge-idioma">Inglés</span>
+                        <h3 id="ingles-inicial-titulo">Inglés Inicial</h3>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <p class="nivel-curso"><strong>Nivel:</strong> A1 — Principiante</p>
+                        <p class="descripcion-curso">
+                            Curso diseñado para quienes nunca han estudiado inglés o tienen conocimientos muy básicos.
+                            Se trabajan las habilidades de comprensión auditiva, lectura, escritura y expresión oral
+                            mediante situaciones cotidianas como presentaciones, compras y direcciones.
+                        </p>
+                        <ul class="detalles-curso">
+                            <li><strong>Duración:</strong> 4 meses (64 horas)</li>
+                            <li><strong>Frecuencia:</strong> 2 clases semanales de 2 horas</li>
+                            <li><strong>Modalidad:</strong> Presencial</li>
+                        </ul>
+                        <a href="programas/ingles-inicial.pdf" class="boton-descargar" download>
+                            📄 Descargar programa (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-curso tarjeta-ingles" aria-labelledby="ingles-intermedio-titulo">
+                    <div class="encabezado-tarjeta encabezado-ingles">
+                        <span class="badge-idioma">Inglés</span>
+                        <h3 id="ingles-intermedio-titulo">Inglés Intermedio</h3>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <p class="nivel-curso"><strong>Nivel:</strong> B1 — Intermedio</p>
+                        <p class="descripcion-curso">
+                            Curso para estudiantes que ya poseen una base sólida de inglés y desean ampliar su vocabulario,
+                            mejorar su gramática y ganar fluidez en conversaciones sobre temas abstractos,
+                            experiencias personales y situaciones laborales.
+                        </p>
+                        <ul class="detalles-curso">
+                            <li><strong>Duración:</strong> 5 meses (80 horas)</li>
+                            <li><strong>Frecuencia:</strong> 2 clases semanales de 2 horas</li>
+                            <li><strong>Modalidad:</strong> Presencial</li>
+                        </ul>
+                        <a href="programas/ingles-intermedio.pdf" class="boton-descargar" download>
+                            📄 Descargar programa (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-curso tarjeta-ingles" aria-labelledby="ingles-avanzado-titulo">
+                    <div class="encabezado-tarjeta encabezado-ingles">
+                        <span class="badge-idioma">Inglés</span>
+                        <h3 id="ingles-avanzado-titulo">Inglés Avanzado</h3>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <p class="nivel-curso"><strong>Nivel:</strong> C1 — Avanzado</p>
+                        <p class="descripcion-curso">
+                            Curso orientado a estudiantes que buscan alcanzar un dominio casi nativo del inglés.
+                            Se abordan textos académicos, debates, presentaciones formales y preparación para
+                            exámenes internacionales como First Certificate o IELTS.
+                        </p>
+                        <ul class="detalles-curso">
+                            <li><strong>Duración:</strong> 6 meses (96 horas)</li>
+                            <li><strong>Frecuencia:</strong> 2 clases semanales de 2 horas</li>
+                            <li><strong>Modalidad:</strong> Presencial y virtual</li>
+                        </ul>
+                        <a href="programas/ingles-avanzado.pdf" class="boton-descargar" download>
+                            📄 Descargar programa (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Cursos de Francés -->
+                <article class="tarjeta-curso tarjeta-frances" aria-labelledby="frances-inicial-titulo">
+                    <div class="encabezado-tarjeta encabezado-frances">
+                        <span class="badge-idioma">Francés</span>
+                        <h3 id="frances-inicial-titulo">Francés Inicial</h3>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <p class="nivel-curso"><strong>Nivel:</strong> A1 — Principiante</p>
+                        <p class="descripcion-curso">
+                            Introducción al idioma francés para personas sin experiencia previa.
+                            Se enseñan las estructuras gramaticales básicas, vocabulario esencial y
+                            expresiones para situaciones cotidianas como saludar, pedir información
+                            y realizar compras en francés.
+                        </p>
+                        <ul class="detalles-curso">
+                            <li><strong>Duración:</strong> 4 meses (64 horas)</li>
+                            <li><strong>Frecuencia:</strong> 2 clases semanales de 2 horas</li>
+                            <li><strong>Modalidad:</strong> Presencial</li>
+                        </ul>
+                        <a href="programas/frances-inicial.pdf" class="boton-descargar" download>
+                            📄 Descargar programa (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-curso tarjeta-frances" aria-labelledby="frances-intermedio-titulo">
+                    <div class="encabezado-tarjeta encabezado-frances">
+                        <span class="badge-idioma">Francés</span>
+                        <h3 id="frances-intermedio-titulo">Francés Intermedio</h3>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <p class="nivel-curso"><strong>Nivel:</strong> B1 — Intermedio</p>
+                        <p class="descripcion-curso">
+                            Dirigido a estudiantes con conocimientos básicos de francés que desean
+                            profundizar en tiempos verbales compuestos, pronombres complejos y
+                            la comprensión de textos literarios y periodísticos francófonos.
+                        </p>
+                        <ul class="detalles-curso">
+                            <li><strong>Duración:</strong> 5 meses (80 horas)</li>
+                            <li><strong>Frecuencia:</strong> 2 clases semanales de 2 horas</li>
+                            <li><strong>Modalidad:</strong> Presencial</li>
+                        </ul>
+                        <a href="programas/frances-intermedio.pdf" class="boton-descargar" download>
+                            📄 Descargar programa (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-curso tarjeta-frances" aria-labelledby="frances-avanzado-titulo">
+                    <div class="encabezado-tarjeta encabezado-frances">
+                        <span class="badge-idioma">Francés</span>
+                        <h3 id="frances-avanzado-titulo">Francés Avanzado</h3>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <p class="nivel-curso"><strong>Nivel:</strong> C1 — Avanzado</p>
+                        <p class="descripcion-curso">
+                            Curso de perfeccionamiento para estudiantes con un nivel intermedio-alto.
+                            Se trabaja con textos académicos, ensayos, cine francés y literatura contemporánea.
+                            Incluye preparación para el examen DELF B2/C1 y situaciones profesionales.
+                        </p>
+                        <ul class="detalles-curso">
+                            <li><strong>Duración:</strong> 6 meses (96 horas)</li>
+                            <li><strong>Frecuencia:</strong> 2 clases semanales de 2 horas</li>
+                            <li><strong>Modalidad:</strong> Presencial y virtual</li>
+                        </ul>
+                        <a href="programas/frances-avanzado.pdf" class="boton-descargar" download>
+                            📄 Descargar programa (PDF)
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Información adicional -->
+        <section class="info-adicional" aria-labelledby="titulo-info">
+            <h2 id="titulo-info">Información útil</h2>
+            <div class="grilla-info">
+                <div class="tarjeta-info">
+                    <span class="icono-info" aria-hidden="true">📅</span>
+                    <h3>Período de inscripción</h3>
+                    <p>Las inscripciones para el segundo semestre 2026 están abiertas hasta el 30 de septiembre. Consultá disponibilidad de vacantes en secretaría.</p>
+                </div>
+                <div class="tarjeta-info">
+                    <span class="icono-info" aria-hidden="true">💰</span>
+                    <h3>Valores y becas</h3>
+                    <p>Ofrecemos descuentos para estudiantes UNLP y becas parciales por mérito académico. Consultá los requisitos en nuestra sección de contacto.</p>
+                </div>
+                <div class="tarjeta-info">
+                    <span class="icono-info" aria-hidden="true">📍</span>
+                    <h3>Ubicación</h3>
+                    <p>Nos encontramos en calle 7 N.º 777, entre 47 y 48, La Plata, Buenos Aires. A tres cuadras de la estación de tren.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <p>&copy; 2026 Instituto Lingüístico UNLP. Todos los derechos reservados.</p>
+            <p class="aviso-legal">Sitio desarrollado con fines académicos. Los datos e información publicados son ficticios.</p>
+            <nav aria-label="Enlaces del pie de página">
+                <ul class="menu-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

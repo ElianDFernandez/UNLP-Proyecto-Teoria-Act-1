@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario de contacto del Instituto Lingüístico UNLP.">
+  <title>Contacto | Instituto Lingüístico UNLP</title>
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Lingüístico UNLP, inicio">
+        <span class="brand-mark" aria-hidden="true">IL</span>
+        <span><strong>Instituto Lingüístico</strong><small>UNLP · Cursos de idiomas</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Catálogo</a>
+        <a class="active" href="contacto.html" aria-current="page">Contacto</a>
+        <a href="mantenimiento.html">Quién mantiene el sitio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="titulo-contacto">
+      <div class="container narrow-container">
+        <p class="eyebrow">Estamos para ayudarte</p>
+        <h1 id="titulo-contacto">Contacto</h1>
+        <p>Escribinos si necesitás orientación para elegir un curso o querés conocer más sobre nuestra propuesta.</p>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="titulo-formulario">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">Formulario de demostración</p>
+          <h2 id="titulo-formulario">¿En qué podemos ayudarte?</h2>
+          <p>Completá los datos y dejá tu consulta. Este formulario es únicamente demostrativo: no envía información a un servidor.</p>
+          <div class="contact-detail"><span aria-hidden="true">✉</span><p><strong>Correo institucional</strong><br>hola@institutolingüistico.example</p></div>
+          <div class="contact-detail"><span aria-hidden="true">◷</span><p><strong>Atención orientativa</strong><br>Lunes a viernes · 9 a 18 h</p></div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-field">
+            <label for="nombre">Nombre y apellido <span aria-hidden="true">*</span></label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" id="correo" name="correo" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="motivo">Motivo de consulta</label>
+            <select id="motivo" name="motivo">
+              <option value="">Seleccioná una opción</option>
+              <option value="curso">Información sobre un curso</option>
+              <option value="inscripcion">Inscripción y requisitos</option>
+              <option value="otro">Otra consulta</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Enviar consulta <span aria-hidden="true">→</span></button>
+          <p class="required-note"><span aria-hidden="true">*</span> Campos obligatorios. En esta versión estática el envío no se procesa.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Instituto Lingüístico UNLP</strong><br><span>Una propuesta ficticia para fines educativos.</span></p>
+      <p class="footer-credit"><a href="mantenimiento.html">Conocé al equipo que mantiene este sitio</a><br>© 2026 Instituto Lingüístico UNLP</p>
+    </div>
+  </footer>
+</body>
+</html>
