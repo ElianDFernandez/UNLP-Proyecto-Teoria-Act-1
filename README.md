@@ -1,6 +1,18 @@
 # Proyecto de software
 **Teoría - Actividad 1**
 
+## 🚀 Ver los sitios web
+
+<p>
+	<a href="https://eliandfernandez.github.io/UNLP-Proyecto-Teoria-Act-1/OpenAI-GPT-5.6-Luna/" target="_blank">
+		<strong>▶ Abrir versión OpenAI</strong>
+	</a>
+	&nbsp;&nbsp;
+	<a href="https://eliandfernandez.github.io/UNLP-Proyecto-Teoria-Act-1/Xioami-MiMo-V2.5-pro/" target="_blank">
+		<strong>▶ Abrir versión Xiaomi MiMo</strong>
+	</a>
+</p>
+
 ## 📁 Contenido del repositorio
 | Carpeta o archivo | Descripción |
 | --- | --- |
